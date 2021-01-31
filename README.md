@@ -54,3 +54,8 @@ Since we know that data not normally distributed and sample size are not the sam
 
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/U_test.png)
 ---
+
+Now we have p-value greater than our cut of level. Having that, we fail to reject Ho.Thus having higher samples size there probably will be no diffence in listing price. 
+We can check this right now. I compute five numbers summary for all 46K samples we have available.
+
+![]()
