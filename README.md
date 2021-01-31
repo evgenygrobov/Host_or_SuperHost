@@ -1,4 +1,4 @@
-# AIRBNB_NYC_in_procces 
+# Host or SuperHost?
 ![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/ny_baby.jpeg)
 # PROJECT DESCRIPTION: 
 ## What makes someone a superhost?
@@ -16,24 +16,47 @@
 * A quick glance at the data shows that there are: 45756 unique listing in NYC in total.
 * How likely the SuperHost's listings prices are higher than not a SuperHost.
 
-## Analisys
-
 ## Exploratory Data Analysis
-In this section, I will detail the  analysis to the questions of interest mentioned in the introduction and gain preliminary insights through exploratory data analysis and visualization. 
-* Airbnb users (customers) rate their stay on the basis of location, cleanliness and a host of other parameters. Here we work with the location score data. It would be interesting to see the average location scores for each neighbourhood. The location scores have to be a firm indicator of the appeal of the neighbourhood. Highly rated neighbourhoods will tend to have better connectivity (subway stations), will tend to be closer to the city hotspots (Times Square, Emire State, Wall Street).
-### Which area is the best?
-![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/location%20ratings%20.png)
 
-The graph confirms the theory and some more. Manhattan receives the highest location scores for the downtown region, Brooklyn neighbourhoods close to Manhattan tend to have higher location ratings. Looking at the NY subway system in Brooklyn, it is interesting to observe that the highly rated areas correspond with subway line presence. The same is true for Bronx where subway lines do not go.
+### Lets see median price distribution across the city. No wonder the Manhattan is the winner.
+---
 
-### Which area is expensive?
-![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/price%20higher%20median.png)
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/price%20nyc.png)
+---
 
-For clarity sake I filtered out price less then median price across the city. As we see downtown Manhattan is the clear winner when it comes to high rents, as is true for the neighbourhoods of Brooklyn close to Manhattan. The East Village area in Downtown Manhattan is a clear outlier, where both rents and location scores tend to be lower than its surrounding regions.
 
-### What types of listings in NYC?
-![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/listings_type.png)
+### Almost 25% of hosts are Super Host. Lets see the presence of them across the city.
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/hostsPortion.png)
+---
 
-## How the superhost are distributed across the city?
+Almost equal proprtion of host we can see only in Staten Island. Man and Brooklyn has most listings but less the 25% Super Host between them.
 
-![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/host%20distributions%20.png)
+### Here I show result of simple price request. First 20 samples. SuperHost listings price is higher. 
+
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20.png)
+---
+
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20numbers.png)
+---
+
+## Hypothesis test. U-test.
+
+Since we observed listing price difference I wanted to know if we have more observations will it affect the difference.
+I presumed that trend will hold, therefore no matter how many new observations we get the Super Host listings will be higher. 
+I need to test the Hypothesis. To do that, I need set null and alternative hypothesises.
+
+* Ho= Listings price the same. No diference
+* Ha= Listings price not the same. There is a difference.
+
+I need to compute p-value, and also compare value to alpha(cut off level) equal to 0.05. 
+Since we know that data not normally distributed and sample size are not the same I applied U-test.
+
+
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/U_test.png)
+---
+
+Now we have p-value greater than our cut of level. Having that, we fail to reject Ho.Thus having higher samples size there probably will be no diffence in listing price. 
+We can check this right now. I compute five numbers summary for all 46K samples we have available.
+
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/statistical%20view%20on%20price%20distribition.png)
+
