@@ -55,8 +55,26 @@ Since we know that data not normally distributed and sample size are not the sam
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/U_test.png)
 ---
 
-Now we have p-value greater than our cut of level. Having that, we fail to reject Ho.Thus having higher samples size there probably will be no diffence in listing price. 
+Now we have p-value greater than our cut off level. Having that, we fail to reject null hypothesis.Thus having higher samples size, there probably will be no diffence in listing price. 
 We can check this right now. I compute five numbers summary for all 46K samples we have available.
 
-![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/statistical%20view%20on%20price%20distribition.png)
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/STATISTICS.png)
+---
 
+And yes, we can observe there is no difference in price between Host and Super Host listings.
+
+
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/statistical%20view%20on%20price%20distribition.png)
+---
+
+## Conclusion. 
+If someone seeking for 'lazy money' by renting out rooms or apts, this project might be helpful for you. Overall, we found no difference in listing price between Host and Super Host.
+However we also may suspect that Super Host badge may attract more clients on the long time period.
+**What makes someone a superhost?** 
+* Airbnb awards the title of “Superhost” to some fraction of its dependable hosts. 
+* Completed at least 10 trips OR completed 3 reservations that total at least 100 nights 
+* Maintained a 90% response rate or higher Maintained 
+* A 1% percent cancellation rate (1 cancellation per 100 reservations) or lower
+* Maintained a 4.8 overall rating
+
+I do not cover here rent frequency between the groups. Might be I will do later.
