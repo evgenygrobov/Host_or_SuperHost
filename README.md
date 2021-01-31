@@ -1,18 +1,15 @@
 # Host or SuperHost?
 ![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/ny_baby.jpeg)
 # PROJECT DESCRIPTION: 
-## What makes someone a superhost?
-* Airbnb awards the title of “Superhost” to some fraction of its dependable hosts. 
-* Completed at least 10 trips OR completed 3 reservations that total at least 100 nights 
-* Maintained a 90% response rate or higher Maintained 
-* A 1% percent cancellation rate (1 cancellation per 100 reservations) or lower
-* Maintained a 4.8 overall rating
+
+- 150M+ users on Airbnb| 2M+ people staying in an Airbnb per night| 7M+ listings worldwide| $35B + company evaluations.
+-  Airbnb awards the title of Super Host to some fraction of its dependable hosts. It’s a small group — researchers say only about 7 % of hosts are Super Hosts.
+- I wanted to know how many Super Hosts on Airbnb NYC and how likely the Super Host badge listing's price on Airbnb.
 
 ## Data
+
 * The data is sourced from the Inside Airbnb website http://insideairbnb.com/get-the-data.html which hosts publicly available data from the Airbnb site.
-
- * Detailed listings data showing 96 atttributes for each of the listings. Some of the attributes used in the analysis are price (continuous), longitude (continuous), latitude (continuous), listing_type (categorical), is_superhost (categorical), neighbourhood (categorical), ratings (continuous) among others.
-
+* Detailed listings data showing 96 atttributes for each of the listings. Some of the attributes used in the analysis are price (continuous), longitude (continuous), latitude (continuous), listing_type (categorical), is_superhost (categorical), neighbourhood (categorical), ratings (continuous) among others.
 * A quick glance at the data shows that there are: 45756 unique listing in NYC in total.
 * How likely the SuperHost's listings prices are higher than not a SuperHost.
 
@@ -68,7 +65,7 @@ And yes, we can observe there is no difference in price between Host and Super H
 ---
 
 ## Conclusion. 
-If someone seeking for 'lazy money' by renting out rooms or apts, this project might be helpful for you. Overall, we found no difference in listing price between Host and Super Host.
+If someone seeking for 'lazy money' by renting out rooms or apts, this project might be helpful for you. I counted that 25% of the 46K listings hold by Super Hosts. Overall, we found no difference in listing price between Host and Super Host.
 However we also may suspect that Super Host badge may attract more clients on the long time period.
 **What makes someone a superhost?** 
 * Airbnb awards the title of “Superhost” to some fraction of its dependable hosts. 
