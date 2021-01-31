@@ -15,7 +15,7 @@
 
 ## Exploratory Data Analysis
 
-### Lets see median price distribution across the city. No wonder the Manhattan is the winner.
+### Lets see median price distribution across the city. No wonder Manhattan is the winner.
 ---
 
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/price%20nyc.png)
