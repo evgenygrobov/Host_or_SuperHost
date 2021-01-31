@@ -32,6 +32,7 @@ For clarity sake I filtered out price less then median price across the city. As
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20.png)
 ---
 
-
+![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20numbers.png)
+---
 
 ### Hypothesis test 
