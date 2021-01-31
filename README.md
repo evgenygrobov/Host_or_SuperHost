@@ -1,4 +1,4 @@
-# Host or SuperHost? What to choose?
+# Host or SuperHost?
 ![](https://github.com/evgenygrobov/AIRBNB_NYC/blob/main/pictures/ny_baby.jpeg)
 # PROJECT DESCRIPTION: 
 ## What makes someone a superhost?
@@ -18,18 +18,20 @@
 
 ## Exploratory Data Analysis
 
+### Lets see median price distribution across the city. No wonder the Manhattan is the winner.
+---
+
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/price%20nyc.png)
 ---
 
-The graph confirms the theory and some more. Manhattan receives the highest location scores for the downtown region, Brooklyn neighbourhoods close to Manhattan tend to have higher location ratings. Looking at the NY subway system in Brooklyn, it is interesting to observe that the highly rated areas correspond with subway line presence. The same is true for Bronx where subway lines do not go.
 
 ### Almost 25% of hosts are Super Host. Lets see the presence of them across the city.
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/hostsPortion.png)
 ---
 
-For clarity sake I filtered out price less then median price across the city. As we see downtown Manhattan is the clear winner when it comes to high rents, as is true for the neighbourhoods of Brooklyn close to Manhattan. The East Village area in Downtown Manhattan is a clear outlier, where both rents and location scores tend to be lower than its surrounding regions.
+Almost equal proprtion of host we can see only in Staten Island. Man and Brooklyn has most listings but less the 25% Super Host between them.
 
-### Listing Price difference between hosts in NYC(20 observations)  
+### Here I show result of simple price request. First 20 samples. SuperHost listings price is higher. 
 
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20.png)
 ---
@@ -37,7 +39,18 @@ For clarity sake I filtered out price less then median price across the city. As
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/first_20numbers.png)
 ---
 
-### Hypothesis test. U-test.
+## Hypothesis test. U-test.
+
+Since we observed listing price difference I wanted to know if we have more observations will it affect the difference.
+I presumed that trend will hold, therefore no matter how many new observations we get the Super Host listings will be higher. 
+I need to test the Hypothesis. To do that, I need set null and alternative hypothesises.
+
+* Ho= Listings price the same. No diference
+* Ha= Listings price not the same. There is a difference.
+
+I need to compute p-value, and also compare value to alpha(cut off level) equal to 0.05. 
+Since we know that data not normally distributed and sample size are not the same I applied U-test.
+
 
 ![](https://github.com/evgenygrobov/Host_or_SuperHost/blob/main/images/U_test.png)
 ---
